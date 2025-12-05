@@ -1,0 +1,47 @@
+.concept {
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    &__container {
+        display: flex;
+    }
+
+    &__title {
+        @extend %title-sections;
+        font-size: 48px;
+        width: 416px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        @extend %text;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        @extend %text;
+        width: 800px;
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        width: 24px;
+        height: 58px;
+    }
+
+    &__line {
+        border: 2px solid #000;
+        width: 0px;
+        height: 100px;
+    }
+
+    &__number-line {
+        justify-content: center;
+    }
+}
