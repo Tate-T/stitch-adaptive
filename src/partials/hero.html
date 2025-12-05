@@ -1,12 +1,40 @@
 <section class="hero">
-    <div class="container">
+    <div class="container hero-container">
       
             <ul class="hero__list">
                 <li class="hero__item"><p class="hero__title">Clothing Designed for One. You.</p></li>
                 <li class="hero__item"><p class="hero__text">Forget the ordinary. We create exceptional, made-to-measure pieces designed exclusively for your story. Tell us your idea, and let’s craft something timeless, together.</p>
-                <button class="hero__button"> <p class="hero__button__text">How It Works</p></button>
+                <button class="hero__button"> How It Works</button>
                 </li>
             </ul>
-     <img src="" alt="" class="hero-img">
+                  <picture class="hero-img">
+          <source
+            srcset="
+              ./img/desktop/gradient@desktop-1x.webp 1x,
+             ./img/desktop/gradient@desktop-2x.webp 2x,
+             ./img/desktop/gradient@desktop-3x.webp 3x
+            "
+            media="(min-width: 1143px)"
+          />
+          <source
+            srcset="
+              1x,
+               2x
+            "
+            media="(min-width: 700px)"
+          />
+          <source
+            srcset="
+               1x,
+             2x
+            "
+            media="(max-width: 699px)"
+          />
+          <img class="gallery-photo1" src="" alt="" />
+        </picture>
+
+
+
+ <picture>
     </div>
 </section>
