@@ -1,8 +1,20 @@
 .crafted {
-display: flex;
+
+    &__title {
+    @extend %title-sections;
+}
+
+  &__columngroup {
+    display: flex;
+  }
+
+  &__text {
+    @extend %subtitles-sections;
+  }
 
 
-
-
-
+  &__image {
+    width: 616px;
+    height: 657px;
+  }
 }
