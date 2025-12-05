@@ -3,6 +3,11 @@
   padding-bottom: 5px;
 }
 
+.header__nav {
+  display: flex;
+  align-items: center;
+
+}
 
 .header__item:first-child {
   margin-right: auto;
@@ -37,6 +42,7 @@
   font-size: 16px;
   line-height: 150%;
   color: white;
+  margin-left: auto;
 }
 
 .header__button:hover {
