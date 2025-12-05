@@ -1,0 +1,17 @@
+.stand {
+    padding: 112px 0;
+
+    &__title {
+        @extend %title-sections;
+        font-size: 48px;
+    }
+
+    &__subtitle {
+        @extend %subtitles-sections
+    }
+
+    &__item::before {
+        content: "";
+        background-image: url(../../img/icon.svg#icon-user_attributes);
+    }
+}
