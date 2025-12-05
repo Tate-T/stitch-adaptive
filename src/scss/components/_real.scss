@@ -1,0 +1,44 @@
+.real {
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+.real__title  {
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+text-align: center;
+color: black;
+}
+.real__text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: black;
+}
+
+.real__names {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: black;
+margin-top: 24px;
+}
+
+.real__list {
+margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.real__item {
+    border: 1px solid black;
+padding: 32px;
+max-width: 640px;
+height: 220px;
+background: white;
+
+}
