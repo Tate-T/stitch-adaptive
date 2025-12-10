@@ -1,14 +1,13 @@
 .materials {
   &__title {
-    font-family: var(--font-family);
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
     text-align: center;
     margin-bottom: 40px;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
   }
 
   &__list {
@@ -16,9 +15,9 @@
     gap: 12px;
   }
 
-  &__denim {
-    width: 252px;
-    height: 873px;
+  &__item {
+    position: relative;
+    overflow: hidden;
   }
 
   &__overlay {
@@ -26,8 +25,10 @@
     overflow: hidden;
   }
 
-  &__item:hover &__overlay__box {
-    transform: translatey(0);
+  &__denim {
+    width: 252px;
+    height: 873px;
+    display: block;
   }
 
   &__overlay__box {
@@ -36,29 +37,37 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translatey(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.55);
+    transform: translateY(100%);
     transition: transform 250ms ease-in-out;
   }
 
+  &__item:hover &__overlay__box {
+    transform: translateY(0);
+  }
+
   &__overlay__subtitle {
-    font-family: var(--font-family);
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // color: white;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 0 10px;
   }
 
   &__overlay__text {
-    font-family: var(--font-family);
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // color: white;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
   }
 }
