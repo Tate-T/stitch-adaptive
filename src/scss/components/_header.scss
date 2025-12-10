@@ -7,10 +7,26 @@
   display: flex;
   align-items: center;
 
+
 }
 
+.header__item {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+
 .header__item:first-child {
-  margin-right: auto;
+  margin-left: auto;
+    font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: black;
+  display: flex;
 }
 
 .header__logo {
@@ -19,18 +35,12 @@
 }
 
 .header__list {
-  display: flex;
+      display: flex;
   gap: 32px;
   align-items: center;
+  
 }
 
-.header__links {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: black;
-}
 
 .header__button {
   background-color: black;
@@ -43,6 +53,11 @@
   line-height: 150%;
   color: white;
   margin-left: auto;
+
+  display: none;
+  @media screen and (min-width: 720px) {
+    display: block;
+  }
 }
 
 .header__button:hover {
@@ -53,3 +68,100 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+// adaptive
+.menu {
+ position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+background-color: white;
+    z-index: 10;
+    width: 100vw;
+}
+
+
+.is-hidden {
+   opacity: 0;
+
+    pointer-events: none;
+}
+
+.menu__nav {
+  display: flex;
+}
+.menu__li:first-child {
+margin-right: auto;
+}
+
+.header__menu__svg  {
+width: 24px;
+height: 24px;
+fill: black; 
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 28px;
+}
+.menu_button {
+    background-color: black;
+  border: 1px solid black;
+  width: 175px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+    margin-left: auto;
+
+  @media screen and (min-width: 720px) {
+  opacity: 0;
+}
+}
+
+.menu__button {
+  background-color: black;
+  border: 1px solid black;
+  width: 175px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+    opacity: 0;
+    margin-right: 16px;
+  @media screen and (min-width: 720px) {
+  opacity: 1;
+}
+}
+
+.header__menu_button {
+   border: 1px solid black;
+padding: 8px;
+width: 40px;
+height: 40px;
+margin-left: auto;
+opacity: 1;
+
+@media screen and (min-width: 720px) {
+  margin-left: 16px;
+}
+@media screen and (min-width: 1280px) {
+  opacity: 0;
+}
+}
+
+.menu__button__close {
+     border: 1px solid black;
+padding: 8px;
+width: 40px;
+height: 40px;
+
+}
