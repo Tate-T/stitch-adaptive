@@ -21,7 +21,7 @@
 
 .header__item:first-child {
   margin-left: auto;
-    font-family: var(--font-family);
+@extend %text;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -47,7 +47,7 @@
   border: 1px solid black;
   width: 175px;
   height: 40px;
-  font-family: var(--font-family);
+@extend %text;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -57,6 +57,7 @@
   display: none;
   @media screen and (min-width: 720px) {
     display: block;
+
   }
 }
 
@@ -113,7 +114,7 @@ fill: black;
   border: 1px solid black;
   width: 175px;
   height: 40px;
-  font-family: var(--font-family);
+@extend %text;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
