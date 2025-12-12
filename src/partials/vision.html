@@ -38,18 +38,44 @@
             </div>
           </li>
           <li class="vision__item">
-        <button class="vision__button">
-            <p class="vision__button__text">Start the Conversation</p>
-          </button>
+            <button class="vision__button">
+              <p class="vision__button__text">Start the Conversation</p>
+            </button>
           </li>
         </ul>
       </div>
       <div class="vision__column2">
-        <img
-          class="vision__image"
-          src="./img/desktop/maked@desktop-1x.webp"
-          alt="maked"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/maked@desktop-1x.webp 1x,
+              ./img/desktop/maked@desktop-2x.webp 2x,
+              ./img/desktop/maked@desktop-3x.webp 3x
+            "
+            media="(min-width: 1143px)"
+          />
+          <source
+            srcset="
+              ./img/tablet/maked@tablet-1x.webp 1x,
+              ./img/tablet/maked@tablet-2x.webp 2x,
+              ./img/tablet/maked@tablet-3x.webp 3x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/maked@mobile-1x.webp 1x,
+              ./img/mobile/maked@mobile-2x.webp 2x,
+              ./img/mobile/maked@mobile-3x.webp 3x
+            "
+            media="(max-width: 699px)"
+          />
+          <img
+            class="vision__image"
+            src="./img/desktop/maked@desktop-1x.webp"
+            alt="maked"
+          />
+        </picture>
       </div>
     </div>
   </div>
