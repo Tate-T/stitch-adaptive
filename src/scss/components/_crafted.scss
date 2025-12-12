@@ -14,8 +14,11 @@
   }
 
   &__columngroup {
-    display: flex;
-    gap: 80px;
+    flex-direction: column;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 80px;
+    }
   }
 
   &__column1 {
@@ -32,10 +35,6 @@
   }
 
   &__column12 {
-    display: flex;
-    gap: 24px;
-    margin-top: 40px;
-
     &__text {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -43,6 +42,14 @@
       color: #000;
       width: auto;
       max-width: 296px;
+      flex-direction: column;
+      display: flex;
+      gap: 32px;
+      @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 24px;
+        margin-top: 40px;
+      }
     }
   }
 
