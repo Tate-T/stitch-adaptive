@@ -336,9 +336,9 @@
         </p>
         <div class="crafted__incolumn">
           <ul class="crafted__column12">
-            <li class="  crafted__column12__item">
-              <h3 class="  crafted__column12__title">Uncompromising Quality</h3>
-              <p class="  crafted__column12__text">
+            <li class="crafted__column12__item">
+              <h3 class="crafted__column12__title">Uncompromising Quality</h3>
+              <p class="crafted__column12__text">
                 We source only premium, durable materials and use meticulous
                 construction techniques. Every stitch, seam, and detail is
                 executed with precision, ensuring your piece not only looks
@@ -346,9 +346,9 @@
                 life.
               </p>
             </li>
-            <li class="  crafted__column12__item">
-              <h3 class="  crafted__column12__title">Radical Collaboration</h3>
-              <p class="  crafted__column12__text">
+            <li class="crafted__column12__item">
+              <h3 class="crafted__column12__title">Radical Collaboration</h3>
+              <p class="crafted__column12__text">
                 Your vision is the starting point for everything we do. We
                 believe the best ideas come from a true creative partnership.
                 You're not just a customer; you are our collaborator from the
@@ -359,11 +359,21 @@
         </div>
       </div>
       <div class="crafted__column2">
-        <img
-          class="crafted__image"
-          src="/stitch-adaptive/assets/drawing@desktop-2x-252n6vG3.webp"
-          alt="drawing"
-        />
+        <picture>
+          <source
+            srcset="./img/desktop/drawing@desktop-1x.webp, /stitch-adaptive/assets/drawing@desktop-2x-252n6vG3.webp 2x, /stitch-adaptive/assets/drawing@desktop-3x-Cu6rHvdf.webp 3x"
+            @media="(min-width: 1143px)"
+          />
+          <source
+            srcset="1x, 2x 3x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="crafted__image"
+            src="./img/desktop/drawing@desktop-1x.webp"
+            alt="drawing"
+          />
+        </picture>
       </div>
     </div>
   </div>
