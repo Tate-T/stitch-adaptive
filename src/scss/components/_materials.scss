@@ -1,18 +1,29 @@
 .materials {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @media screen and (min-width: 1280px) {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
   &__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 120%;
     text-align: center;
-    margin-bottom: 40px;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
+    @media screen and (min-width: 1280px) {
+      font-family: "Roboto", sans-serif;
+      font-size: 48px;
+    }
   }
 
   &__list {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -26,9 +37,14 @@
   }
 
   &__denim {
-    width: 252px;
-    height: 873px;
     display: block;
+    width: 335px;
+    height: 314px;
+    min-width: 225px;
+    @media screen and (min-width: 1280px) {
+      width: 252px;
+      height: 873px;
+    }
   }
 
   &__overlay__box {
