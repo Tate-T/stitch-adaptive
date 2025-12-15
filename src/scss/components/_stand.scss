@@ -2,10 +2,6 @@
     padding-top: 64px;
     padding-bottom: 64px;
 
-    @media screen and (min-width: 480px) {}
-
-    @media screen and (min-width: 768px) {}
-
     @media screen and (min-width: 1280px) {
         padding-top: 112px;
         padding-bottom: 112px;
@@ -14,10 +10,6 @@
     &__container {
         display: flex;
         flex-direction: column;
-
-        @media screen and (min-width: 480px) {}
-
-        @media screen and (min-width: 768px) {}
 
         @media screen and (min-width: 1280px) {
             flex-direction: row;
@@ -28,11 +20,6 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 80px;
-
-
-        @media screen and (min-width: 480px) {}
-
-        @media screen and (min-width: 768px) {}
 
         @media screen and (min-width: 1280px) {
             margin-right: 80px;
@@ -47,10 +34,6 @@
         width: 100%;
         margin-bottom: 24px;
 
-        @media screen and (min-width: 480px) {}
-
-        @media screen and (min-width: 768px) {}
-
         @media screen and (min-width: 1280px) {
             width: 380px;
             font-size: 48px;
@@ -61,10 +44,6 @@
         @extend %subtitles-sections;
         max-width: 380px;
         width: 100%;
-
-        @media screen and (min-width: 480px) {}
-
-        @media screen and (min-width: 768px) {}
 
         @media screen and (min-width: 1280px) {
             width: 380px;
@@ -82,8 +61,6 @@
             flex-direction: row;
         }
 
-        @media screen and (min-width: 768px) {}
-
         @media screen and (min-width: 1280px) {
             gap: 64px 48px;
         }
@@ -94,8 +71,6 @@
     &__item {
         max-width: 480px;
         width: 100%;
-
-
 
         @media screen and (min-width: 480px) {
             width: 143px;
@@ -126,9 +101,6 @@
         margin-bottom: 24px;
         max-width: 143px;
         width: 100%;
-
-
-        @media screen and (min-width: 480px) {}
 
         @media screen and (min-width: 768px) {
             width: 328px;
