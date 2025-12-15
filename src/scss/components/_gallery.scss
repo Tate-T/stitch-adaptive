@@ -7,12 +7,6 @@
         text-align: center;
         margin-bottom: 24px;
 
-
-
-        @media screen and (min-width: 480px) {}
-
-        @media screen and (min-width: 768px) {}
-
         @media screen and (min-width: 1280px) {
             font-size: 48px;
         }
@@ -27,8 +21,6 @@
         margin-left: auto;
         margin-bottom: 40px;
 
-
-        @media screen and (min-width: 480px) {}
 
         @media screen and (min-width: 768px) {
             width: 704px;
@@ -50,12 +42,20 @@
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
+    }
 
-        @media screen and (min-width: 480px) {}
+    &__item {
+        display: flex;
+        flex-direction: column;
 
-        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 480px) {
+            flex-basis: calc(((100% - 12px * 1)) / 2);
+            flex-direction: row;
+        }
 
-        @media screen and (min-width: 1280px) {}
+        @media screen and (min-width: 1280px) {
+            flex-basis: content;
+        }
     }
 
 }
