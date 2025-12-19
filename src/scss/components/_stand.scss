@@ -1,38 +1,90 @@
 .stand {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
 
     &__container {
         display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 1280px) {
+            flex-direction: row;
+        }
     }
 
     &__box {
         display: flex;
         flex-direction: column;
-        margin-right: 80px
+        margin-bottom: 80px;
+
+        @media screen and (min-width: 1280px) {
+            margin-right: 80px;
+            margin-bottom: 0;
+        }
     }
 
     &__title {
         @extend %title-sections;
-        font-size: 48px;
-        width: 380px;
+        font-size: 36px;
+        max-width: 380px;
+        width: 100%;
         margin-bottom: 24px;
+
+        @media screen and (min-width: 1280px) {
+            width: 380px;
+            font-size: 48px;
+        }
     }
 
     &__subtitle {
         @extend %subtitles-sections;
-        width: 380px;
+        max-width: 380px;
+        width: 100%;
+
+        @media screen and (min-width: 1280px) {
+            width: 380px;
+        }
 
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 64px 48px;
+        flex-direction: column;
+        gap: 48px;
+
+        @media screen and (min-width: 480px) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1280px) {
+            gap: 64px 48px;
+        }
     }
 
+
+
     &__item {
-        width: 402px;
+        max-width: 480px;
+        width: 100%;
+
+        @media screen and (min-width: 480px) {
+            width: 143px;
+            flex-basis: calc(((100% - 48px * 1)) / 2);
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 328px;
+            flex-basis: calc(((100% - 48px * 1)) / 2);
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 402px;
+        }
     }
 
     &__svg {
@@ -43,10 +95,21 @@
 
     &__li-title {
         font-weight: 700;
-        font-size: 32px;
+        font-size: 24px;
         line-height: 130%;
         @extend %text;
         margin-bottom: 24px;
+        max-width: 143px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: 328px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 402px;
+            font-size: 32px;
+        }
 
     }
 
@@ -56,8 +119,4 @@
         line-height: 150%;
         @extend %text;
     }
-
-
-
-
 }
