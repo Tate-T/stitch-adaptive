@@ -19,19 +19,17 @@
   />
     <title></title>
     <script type="module" crossorigin src="/stitch-adaptive/commonHelpers.js"></script>
-    <link rel="stylesheet" crossorigin href="/stitch-adaptive/assets/index-BUfe_cCx.css">
+    <link rel="stylesheet" crossorigin href="/stitch-adaptive/assets/index-z54i0qva.css">
   </head>
 
   <body>
     <header class="header" id="header">
   <div class="container">
     <nav class="header__nav">
+      <svg class="header__logo">
+        <use href="/stitch-adaptive/assets/images-Ca_4dKPu.svg#icon-Logo"></use>
+      </svg>
       <ul class="header__list">
-        <li class="header__item">
-          <svg class="header__logo">
-            <use href="/stitch-adaptive/assets/images-Ca_4dKPu.svg#icon-Logo"></use>
-          </svg>
-        </li>
         <li class="header__item">
           <a class="header__links" href="#crafted"> Manifesto </a>
         </li>
@@ -50,10 +48,14 @@
         <li class="header__item">
           <a class="header__links" href="#vision"> Testimonials</a>
         </li>
+        <li class="header__item">
+          <button class="header__button">
+            <a class="header__button__text" href="#vision"
+              >Start Your Creation</a
+            >
+          </button>
+        </li>
       </ul>
-      <button class="header__button">
-        <a class="header__button__text" href="#vision">Start Your Creation</a>
-      </button>
 
       <button class="header__menu_button" data-menu-open>
         <svg class="header__menu__svg">
@@ -104,7 +106,11 @@
           <a class="header__links" href=""> Testimonials</a>
         </li>
         <li class="menu__item">
-          <button class="menu_button">        <a class="header__button__text" href="#vision">Start Your Creation</a></button>
+          <button class="menu_button">
+            <a class="header__button__text" href="#vision"
+              >Start Your Creation</a
+            >
+          </button>
         </li>
       </ul>
     </div>
@@ -113,36 +119,43 @@
 <a class="button-scroll" href="#header">top</a>
 
     <section class="hero" id="hero">
-    <div class="container hero-container">
-      
-            <ul class="hero__list">
-                <li class="hero__item"><p class="hero__title">Clothing Designed for One. You.</p></li>
-                <li class="hero__item"><p class="hero__text">Forget the ordinary. We create exceptional, made-to-measure pieces designed exclusively for your story. Tell us your idea, and let’s craft something timeless, together.</p>
-                <button class="hero__button"> 
-                  <a href="#vision">How It Works</a>
-                </button>
-                </li>
-            </ul>
-                  <picture class="hero-img">
-          <source
-            srcset="/stitch-adaptive/assets/gradient@desktop-1x-BP01fyHP.webp 1x, /stitch-adaptive/assets/gradient@desktop-2x-CwMPoPBa.webp 2x, /stitch-adaptive/assets/gradient@desktop-3x-C3lTsi6r.webp 3x"
-            media="(min-width: 1143px)"
-          />
-          <source
-            srcset="/stitch-adaptive/assets/gradient@tablet-1x-DDWu-c27.webp 1x, /stitch-adaptive/assets/gradient@tablet-2x-C8PXATts.webp 2x, /stitch-adaptive/assets/gradient@tablet-3x-4gh74XDr.webp 3x"
-            media="(min-width: 700px)"
-          />
-          <source
-            srcset="/stitch-adaptive/assets/gradient@mobile-1x-DU39-Si_.webp 1x, /stitch-adaptive/assets/gradient@mobile-1x-DU39-Si_.webp 2x, /stitch-adaptive/assets/gradient@mobile-3x-lES_hD-B.webp 3x"
-            media="(max-width: 699px)"
-          />
-          <img class="gallery-photo1" src="../img/desktop/gradient@desktop-1x.webp" alt="" />
-        </picture>
-
-
-
- <picture>
+  <div class="container">
+    <div class="hero-container">
+      <div class="hero_container-title">
+        <h1 class="hero__title">Clothing Designed for One. You.</h1>
+      </div>
+      <div class="hero_container-text">
+        <p class="hero__text">
+          Forget the ordinary. We create exceptional, made-to-measure pieces
+          designed exclusively for your story. Tell us your idea, and let’s
+          craft something timeless, together.
+        </p>
+        <button class="hero__button">
+          <a href="#vision">How It Works</a>
+        </button>
+      </div>
     </div>
+
+    <picture class="hero-img">
+      <source
+        srcset="/stitch-adaptive/assets/gradient@desktop-1x-BP01fyHP.webp 1x, /stitch-adaptive/assets/gradient@desktop-2x-CwMPoPBa.webp 2x, /stitch-adaptive/assets/gradient@desktop-3x-C3lTsi6r.webp 3x"
+        media="(min-width: 1143px)"
+      />
+      <source
+        srcset="/stitch-adaptive/assets/gradient@tablet-1x-DDWu-c27.webp 1x, /stitch-adaptive/assets/gradient@tablet-2x-C8PXATts.webp 2x, /stitch-adaptive/assets/gradient@tablet-3x-4gh74XDr.webp 3x"
+        media="(min-width: 700px)"
+      />
+      <source
+        srcset="/stitch-adaptive/assets/gradient@mobile-1x-DU39-Si_.webp 1x, /stitch-adaptive/assets/gradient@mobile-1x-DU39-Si_.webp 2x, /stitch-adaptive/assets/gradient@mobile-3x-lES_hD-B.webp 3x"
+        media="(max-width: 699px)"
+      />
+      <img
+        class="gallery-photo1"
+        src="../img/desktop/gradient@desktop-1x.webp"
+        alt=""
+      />
+    </picture>
+  </div>
 </section>
 
     <section class="stand">
