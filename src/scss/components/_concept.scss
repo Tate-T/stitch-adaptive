@@ -1,29 +1,70 @@
 .concept {
-    padding-top: 112px;
-    padding-bottom: 112px;
+
+    padding: 64px 0;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
 
     &__container {
         display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
     }
 
     &__title {
         @extend %title-sections;
-        font-size: 48px;
-        width: 416px;
+        font-size: 36px;
+        max-width: 335px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 768px) {
+            width: 151px;
+            margin-right: 32px;
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 48px;
+            width: 416px;
+        }
+    }
+
+    &__content {
+        display: flex;
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
+
+        @media screen and (min-width: 768px) {
+            gap: 16px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            gap: 50px;
+        }
+
     }
 
-    &__subtitle {
+    &__lititle {
         font-weight: 700;
-        font-size: 20px;
         line-height: 140%;
         @extend %text;
         margin-bottom: 16px;
+        font-size: 18px;
+
+        @media screen and (min-width: 1280px) {
+            font-size: 20px;
+        }
     }
 
     &__text {
@@ -31,24 +72,62 @@
         font-size: 16px;
         line-height: 150%;
         @extend %text;
-        width: 800px;
+        max-width: 287px;
+        width: 100%;
+
+
+        @media screen and (min-width: 768px) {
+            width: 457px;
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 800px;
+        }
     }
 
     &__number {
         font-weight: 700;
-        font-size: 48px;
+        margin-right: 2px;
         line-height: 120%;
         width: 24px;
-        height: 58px;
-        margin-right: 10px;
+        height: 43px;
+        font-size: 36px;
+
+        @media screen and (min-width: 768px) {
+
+            font-size: 48px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            height: 58px;
+            margin-right: 10px;
+        }
     }
 
     &__line {
         border: 2px solid #000;
-        width: 0px;
-        height: 100px;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 22px;
+        margin-top: 22px;
+        height: 300px;
+
+        @media screen and (min-width: 480px) {
+            height: 230px;
+            margin-top: 22px;
+            margin-bottom: 22px;
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 120px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 0px;
+            height: 100px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
     }
 
     &__number-line {
@@ -56,6 +135,7 @@
         flex-direction: column;
         align-items: center;
         margin-right: 40px;
-        justify-content: space-between;
+        justify-content: center;
     }
+
 }

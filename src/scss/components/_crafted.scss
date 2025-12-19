@@ -1,6 +1,7 @@
 .crafted {
   padding-top: 64px;
   padding-bottom: 64px;
+
   @media screen and (min-width: 1280px) {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -15,9 +16,11 @@
     width: auto;
     max-width: 616px;
     margin-bottom: 24px;
+
     @media screen and (min-width: 768px) {
       max-width: 704px;
     }
+
     @media screen and (min-width: 1280px) {
       font-size: 48px;
     }
@@ -26,6 +29,7 @@
   &__columngroup {
     display: flex;
     flex-direction: column;
+
     @media screen and (min-width: 1280px) {
       display: flex;
       gap: 80px;
@@ -44,6 +48,7 @@
     color: #000;
     width: auto;
     max-width: 616px;
+
     @media screen and (min-width: 768px) {
       max-width: 704px;
     }
@@ -52,10 +57,13 @@
   &__column12 {
     display: flex;
     gap: 24px;
+  
+
     &__title {
       margin-bottom: 16px;
       margin-top: 40px;
     }
+
     &__text1 {
       margin-bottom: 48px;
       font-family: "Roboto", sans-serif;
@@ -67,9 +75,11 @@
       flex-direction: column;
       display: flex;
       gap: 32px;
+
       @media screen and (min-width: 768px) {
         max-width: 340px;
       }
+
       @media screen and (min-width: 1280px) {
         display: flex;
         gap: 24px;
@@ -89,9 +99,11 @@
       display: flex;
       gap: 32px;
       margin-bottom: 32px;
+
       @media screen and (min-width: 768px) {
         max-width: 704px;
       }
+
       @media screen and (min-width: 1280px) {
         display: flex;
         margin-bottom: 32px;
