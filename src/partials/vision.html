@@ -7,74 +7,49 @@
           You're in the right place. Share your thoughts with us, and we'll
           collaborate to make your concept a reality.
         </p>
-        <ul class="vision__login">
-          <li class="vision__item">
-            <label class="vision__label" for="name">Name*</label>
-            <div class="vision__frame">
-              <input
-                class="vision__placeholder"
-                placeholder="Your name"
-                type="name"
-              />
-            </div>
-          </li>
-          <li class="vision__item">
-            <label class="vision__label" for="name">Email*</label>
-            <div class="vision__frame">
-              <input
-                class="vision__placeholder"
-                type="name"
-                placeholder="Your email"
-              />
-            </div>
-          </li>
-          <li class="vision__item vision__item2">
-            <label class="vision__label" for="name">Describe Your Vision</label>
-            <div class="vision__frame2">
-              <textarea
-                class="vision__placeholder1"
-                placeholder="Tell us about the concept you're imagining. What's the story? What feeling should it evoke? The more details, the better we can understand your unique style."
-              ></textarea>
-            </div>
-          </li>
-          <li class="vision__item">
-            <button class="vision__button">
-              <p class="vision__button__text">Start the Conversation</p>
-            </button>
-          </li>
-        </ul>
+        <form class="vision__login">
+
+          <label class="vision__label" for="name" >Name*</label>
+          <div class="vision__frame" required>
+            <input class="vision__placeholder" placeholder="Your name" type="name" />
+          </div>
+          <label class="vision__label" for="name" >Email*</label>
+          <div class="vision__frame">
+            <input class="vision__placeholder" type="name" placeholder="Your email" required/>
+          </div>
+
+
+          <label class="vision__label" for="name">Describe Your Vision</label>
+          <div class="vision__frame2">
+            <textarea class="vision__placeholder1"
+              placeholder="Tell us about the concept you're imagining. What's the story? What feeling should it evoke? The more details, the better we can understand your unique style."></textarea>
+          </div>
+
+
+          <button class="vision__button" type="submit">
+            <p class="vision__button__text">Start the Conversation</p>
+          </button>
+
+        </form>
       </div>
       <div class="vision__column2">
         <picture>
-          <source
-            srcset="
+          <source srcset="
               ./img/desktop/maked@desktop-1x.webp 1x,
               ./img/desktop/maked@desktop-2x.webp 2x,
               ./img/desktop/maked@desktop-3x.webp 3x
-            "
-            media="(min-width: 1143px)"
-          />
-          <source
-            srcset="
+            " media="(min-width: 1143px)" />
+          <source srcset="
               ./img/tablet/maked@tablet-1x.webp 1x,
               ./img/tablet/maked@tablet-2x.webp 2x,
               ./img/tablet/maked@tablet-3x.webp 3x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
+            " media="(min-width: 768px)" />
+          <source srcset="
               ./img/mobile/maked@mobile-1x.webp 1x,
               ./img/mobile/maked@mobile-2x.webp 2x,
               ./img/mobile/maked@mobile-3x.webp 3x
-            "
-            media="(max-width: 699px)"
-          />
-          <img
-            class="vision__image"
-            src="./img/desktop/maked@desktop-1x.webp"
-            alt="maked"
-          />
+            " media="(max-width: 699px)" />
+          <img class="vision__image" src="./img/desktop/maked@desktop-1x.webp" alt="maked" />
         </picture>
       </div>
     </div>
